@@ -167,7 +167,8 @@ print(a+b)
 
 a=5
 b="Your Name"
-print(a+b)
+# print(a+b)
+#TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
 
 
