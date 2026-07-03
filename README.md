@@ -44,6 +44,12 @@ A complete self-learning journey to become a Backend Developer from scratch.
 - 🔄 Crack Software Developer Interviews
 
 ---
+## 🎮 Projects Built
+| Project | Concepts Used | Status |
+|---------|--------------|--------|
+| Number Guessing Game | random, while, if/elif | ✅ |
+| Number Adding Game | random, while, break | ✅ |
+| Math Challenge Game | random, score | ✅ |
 
 **Author:** Md Sakir  
 🎓 B.Tech (Computer Science & Engineering)  
