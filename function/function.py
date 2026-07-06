@@ -124,11 +124,14 @@ def print_detail(regular_arg, **kwargs):
 print_detail("Regular", name="Alice", age=30, city="New York")
        
 
+
 #Example 3: A function that takes both variable-length positional and keyword arguments
 def print_details(*args, **kwargs):# The function print_details is defined to accept both variable-length positional arguments (*args) and variable-length keyword arguments (**kwargs). Inside the function, it first prints the positional arguments by iterating over args. Then, it prints the keyword arguments by iterating over the key-value pairs in kwargs.
     print("Positional Arguments:")
     for arg in args:
         print(arg)
+
+
     
     print("\nKeyword Arguments:")
     for key, value in kwargs.items():
@@ -245,3 +248,111 @@ def print_info(name, age, /, *, city):# The function print_info is defined to ac
     print(f"City: {city}")
     
 print_info("Alice", 30, city="New York")  # Output: Name: Alice, Age: 30, City: New York
+
+
+
+#Scope
+#In Python, scope refers to the region of a program where a variable can be accessed. Python follows the LEGB rule to determine variable scope:
+
+# L – Local Scope: Variables defined inside a function.
+# E – Enclosing Scope: Variables in the outer function when functions are nested.
+# G – Global Scope: Variables defined at the top level of a module.
+# B – Built-in Scope: Names that are predefined by Python, such as print(), len(), etc.
+
+
+# 1. Local Scope
+
+# A variable created inside a function is only accessible within that function.
+
+def greet():
+    message = "Hello"
+    print(message)
+
+greet()
+# print(message)  # Error: message is not defined
+
+
+
+# 2. Global Scope
+
+# A variable defined outside all functions is global and can be accessed anywhere in the module.
+
+name = "Alice"
+
+def show():
+    print(name)
+
+show()   # Output: Alice
+print(name)  # Output: Alice
+
+
+# 3. Enclosing Scope
+
+# Used in nested functions. The inner function can access variables from the outer function.
+# def outer():
+#     x = 10
+
+#     def inner():
+#         print(x)
+
+#     inner()
+
+# outer()   # Output: 10
+
+
+# 4. Built-in Scope
+
+# Python provides built-in functions and names that are always available.
+
+numbers = [1, 2, 3]
+print(len(numbers))  # len() is a built-in function
+
+
+# Using global
+
+# To modify a global variable inside a function, use the global keyword.
+
+count = 0
+
+def increment():
+    global count
+    count += 1
+
+increment()
+print(count)  # Output: 1
+
+# Using nonlocal
+
+# To modify a variable in the enclosing scope, use the nonlocal keyword.
+def outer():
+    x = 5
+
+    def inner():
+        nonlocal x
+        x += 1
+        print(x)
+
+    inner()
+
+outer()  # Output: 6
+
+
+# Python searches for a variable in this order: Local → Enclosing → Global → Built-in (LEGB).
+
+
+# Naming Variables
+# If you operate with the same variable name inside and outside of a function, Python will treat them as two separate variables, one available in the global scope (outside the function) and one available in the local scope (inside the function):
+
+
+# Example
+# The function will print the local x, and then the code will print the global x:
+
+x = 300
+
+def myfunc():
+  x = 200
+  print(x)
+
+myfunc()
+
+print(x)
