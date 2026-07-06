@@ -44,30 +44,36 @@ This repository contains my **daily notes, code practice, and projects** as I le
 ```
 backend-devloper-by-self-learning/
 │
-├── 📁 Internet-and-Web/     # Day 01 - How internet works, HTTP, DNS, APIs
-├── 📁 Variable/             # Day 02 - Variables, naming rules, scope
-│   └── variable.py
-├── 📁 DataType/             # Day 03 - All 14 Python data types
-│   ├── datatype.py
-│   ├── casting.py
-│   └── number.py
-├── 📁 Condition/            # Day 04 - if, elif, else, logical operators
-│   └── if_else_if.py
-├── 📁 Input/                # Day 05 - input(), f-strings, type conversion
-│   └── input.py
-├── 📁 Loops/                # Day 06 - for loop, while loop, games
-│   ├── for_loop.py
-│   ├── while_loop.py
-│   ├── number_guessing_game.py
-│   ├── number_adding_game.py
-│   └── math_game.py
-├── 📁 Functions/            # Day 07 - Functions, booleans
-│   ├── functions.py
-│   └── booleans.py
-├── 📁 Hello/                # First Python program
-│   └── hello.py
-└── 📄 README.md             # This file
-```
+├── 📁 Condition
+│   └── if_else_if.py ✅
+├── 📁 DataType
+│   ├── boolean.py ✅
+│   ├── casting.py ✅
+│   ├── datatype.py ✅
+│   └── number.py ✅
+├── 📁 function
+│   ├── decorators.py ✅ 🔥
+│   ├── function.py ✅
+│   └── lambda.py ✅
+├── 📁 Hello
+│   └── hello.py ✅
+├── 📁 Input
+│   └── input.py ✅
+├── 📁 Internet-and-Web
+│   └── notes.md ✅
+├── 📁 Introduction
+│   └── introduction_to_python.md ✅
+├── 📁 Loop
+│   ├── 📁 TestQuestion
+│   ├── for.py ✅
+│   ├── text5.py ✅
+│   └── while.py ✅
+├── 📁 methods
+│   ├── listmethod.py ✅
+│   └── stringmethod.py ✅
+├── 📁 Variable
+│   └── variable.py ✅
+└── 📄 README.md ✅
 
 ---
 
