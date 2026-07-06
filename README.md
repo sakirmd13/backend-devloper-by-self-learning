@@ -31,8 +31,8 @@ This repository contains my **daily notes, code practice, and projects** as I le
 | 05 | User Input & f-Strings | `Input` | ✅ Completed |
 | 06 | Python Loops (for, while) | `Loops` | ✅ Completed |
 | 07 | Python Functions & Booleans | `Functions` | ✅ Completed |
-| 08 | Lambda & String/List Methods | `Methods` | 🔄 In Progress |
-| 09 | Python OOP Basics | `OOP` | ⏳ Coming Soon |
+| 08 | Lambda & String/List Methods | `Methods` |✅ Completed   |
+| 09 | Python OOP Basics | `OOP` | 🔄 In Progress|
 | 10 | File Handling | `FileHandling` | ⏳ Coming Soon |
 | 11 | Exception Handling | `Exceptions` | ⏳ Coming Soon |
 | 12 | Mini Project — Full App | `Projects` | ⏳ Coming Soon |
